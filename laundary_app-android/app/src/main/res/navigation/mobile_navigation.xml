@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.laundry.user.ui.activity.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_order"
+        android:name="com.laundry.user.ui.activity.ui.order.OrderFragment"
+        android:label="@string/title_order"
+        tools:layout="@layout/fragment_order" />
+
+    <fragment
+        android:id="@+id/navigation_favorite"
+        android:name="com.laundry.user.ui.activity.ui.favorite.FavoriteFragment"
+        android:label="@string/title_favorite"
+        tools:layout="@layout/favorite_fragment" />
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.laundry.user.ui.activity.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/profile_fragment" />
+</navigation>

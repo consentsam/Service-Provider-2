@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pick_up_card1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/_5sdp"
+    android:elevation="@dimen/_5sdp"
+    android:layout_margin="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:paddingHorizontal="@dimen/_5sdp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:cardBackgroundColor="@color/colorMain"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:padding="@dimen/_10sdp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_timeCollection"
+
+            >
+
+            <TextView
+                android:id="@+id/tv_pick_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12 May"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/tv_pick_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tuesday"
+                android:gravity="center"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+

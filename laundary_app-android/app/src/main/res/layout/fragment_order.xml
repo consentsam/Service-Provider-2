@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.ui.order.OrderFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:gravity="center"
+
+
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="My Order"
+                    android:textColor="@color/colorgrey"
+                    android:textSize="@dimen/_16sdp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    >
+                    <TextView
+                        android:id="@+id/ongoing_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="@dimen/_14sdp"
+                        android:background="@drawable/drawable_selector"
+                        android:textColor="@color/colorBlack"
+
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Ongoing Order"/>
+                    <TextView
+                        android:id="@+id/past_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_14sdp"
+                        android:gravity="center"
+                        android:background="@drawable/drawable_selector"
+                        android:textColor="@color/colorBlack"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Past Order"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/order_list_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                tools:itemCount="2"
+                tools:listitem="@layout/ongoing_order_card"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

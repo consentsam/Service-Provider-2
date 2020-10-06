@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.PaymentConfirmationActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Payment"
+                android:textSize="@dimen/_12sdp"
+                android:drawableLeft="@drawable/back_icon"
+                android:drawablePadding="@dimen/_10sdp"
+                android:padding="@dimen/_8sdp"
+                android:textColor="@color/colorMain"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_16sdp"
+                android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/rg_pyment_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rb_english"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:button="@drawable/language_selector"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingStart="@dimen/_16sdp"
+                    android:paddingEnd="@dimen/_16sdp"
+                    android:text="Apple Pay"
+
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_15sdp" />
+
+                <RadioButton
+                    android:id="@+id/rb_arabic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:button="@drawable/language_selector"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingStart="@dimen/_16sdp"
+                    android:paddingEnd="@dimen/_16sdp"
+                    android:text="STC Pay"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_15sdp" />
+                <RadioButton
+                    android:id="@+id/rb_arabic_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:button="@drawable/language_selector"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingStart="@dimen/_16sdp"
+                    android:paddingEnd="@dimen/_16sdp"
+                    android:text="Cash"
+                    android:checked="true"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_15sdp" />
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/place_order_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Place Order"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/background_button"
+                android:textSize="@dimen/_12sdp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

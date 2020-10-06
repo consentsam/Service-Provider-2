@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:elevation="@dimen/_5sdp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:padding="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/home_laundary_iv"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:background="@drawable/home_image"/>
+            <ImageButton
+                android:id="@+id/home_like_ib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home_heart_unfill"
+                android:layout_alignTop="@+id/home_laundary_iv"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/home_laundry_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:padding="@dimen/_3sdp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Lavagettone"
+                android:textColor="@color/colorMain"
+                android:textSize="@dimen/_14sdp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.7"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/home_laundry_address_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:padding="@dimen/_3sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="ORD12476"
+                        android:textColor="@color/colorgrey"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                    <TextView
+                        android:id="@+id/home_laundry_minorder_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:padding="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Payment Status"
+                        android:textColor="@color/colorgrey"
+                        android:textSize="@dimen/_10sdp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9"
+                    android:layout_gravity="end"
+                    android:gravity="right|bottom"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/home_laundry_distance_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginRight="@dimen/_5sdp"
+
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="SAR 50"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/_12sdp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:padding="@dimen/_3sdp"
+
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Pending"
+                        android:textColor="@color/quantum_yellow"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:background="@color/colorBlack"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:layout_marginTop="@dimen/_5sdp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/accepted_active"
+                android:drawableTint="@color/colorMain"
+                android:text="Accepted"
+                android:gravity="center"
+                android:textColor="@color/colorMain"
+                android:drawablePadding="@dimen/_10sdp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/pickedup_inactive"
+                android:text="Pick Up"
+                android:gravity="center"
+                android:textColor="@color/colorgrey"
+                android:drawablePadding="@dimen/_10sdp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/inprogress_inactive"
+                android:text="In Progress"
+                android:gravity="center"
+                android:textColor="@color/colorgrey"
+                android:drawablePadding="@dimen/_10sdp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/packed_inactive"
+                android:text="Packed"
+                android:gravity="center"
+                android:textColor="@color/colorgrey"
+                android:drawablePadding="@dimen/_10sdp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/delivered_inactive"
+                android:text="Delivered"
+                android:gravity="center"
+                android:textColor="@color/colorgrey"
+                android:drawablePadding="@dimen/_10sdp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,81 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="CustomAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowLightStatusBar">true</item>
+<!--        <item name="android:statusBarColor">@color/colorWhite</item>-->
+<!--        <item name="statusBarBackground">@color/colorWhite</item>-->
+
+        <!--        <item name="android:windowActionBarOverlay">true</item>-->
+    </style>
+    <!-- Base application theme. -->
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+<!--    // for light and dark theme implementation-->
+    <style name="LightTheme" parent="CustomAppTheme">
+        <item name="textColor">@color/colorBlack</item>
+        <item name="metaTextColor">#606060</item>
+        <item name="bgColor">@color/colorWhite</item>
+    </style>
+
+    <style name="DarkTheme" parent="CustomAppTheme">
+        <item name="textColor">@color/colorWhite</item>
+        <item name="metaTextColor">#aeaeae</item>
+        <item name="bgColor">@color/colorBlack</item>
+    </style>
+
+    <style name="RippleEffectWithoutButton">
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="EditBoxStyle">
+        <item name="android:paddingStart">@dimen/_16sdp</item>
+        <item name="android:paddingEnd">@dimen/_16sdp</item>
+        <item name="android:paddingTop">@dimen/_12sdp</item>
+        <item name="android:paddingBottom">@dimen/_12sdp</item>
+        <item name="android:drawablePadding">@dimen/_16sdp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/background_edittext</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textColorHint">@color/colorCheckBox</item>
+        <item name="android:layout_marginBottom">@dimen/_16sdp</item>
+<!--        <item name="fontFamily">@font/roboto_regular</item>-->
+    </style>
+    <style name="EditBoxWithoutBackgroundStyle">
+        <item name="android:paddingEnd">@dimen/_16sdp</item>
+        <item name="android:paddingTop">@dimen/_12sdp</item>
+        <item name="android:paddingBottom">@dimen/_16sdp</item>
+        <item name="android:drawablePadding">@dimen/_16sdp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textColorHint">@color/EditTextLabelColor</item>
+        <item name="android:layout_marginBottom">@dimen/_16sdp</item>
+        <item name="backgroundTint">@color/colorCheckBox</item>
+<!--        <item name="android:textCursorDrawable">@null</item>-->
+                <item name="fontFamily">@font/roboto_regular</item>
+
+        <!--        <item name="fontFamily">@font/roboto_regular</item>-->
+    </style>
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up_dialog</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_down</item>
+    </style>
+    <style name="DialogSlideAnim" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+</resources>

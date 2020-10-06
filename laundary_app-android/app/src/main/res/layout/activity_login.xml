@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/app_bg"
+    tools:context=".ui.activity.login.LoginActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/logo_layout" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_16sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_forgot_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_16sdp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/login"
+                    android:textColor="@color/colorMain"
+                    android:textSize="@dimen/_20sdp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    style="@style/EditBoxStyle">
+                    <TextView
+                        android:id="@+id/tv_countrycode_register"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="+966 "
+
+                        android:textSize="@dimen/_14sdp"
+                        android:textCursorDrawable="@null"/>
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@color/colorCheckBox"/>
+                    <EditText
+                        android:id="@+id/et_mobile_number_login"
+                        android:background="@color/colorWhite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/mobile_number"
+                        android:inputType="number"
+                        android:textColorHint="@color/colorCheckBox"
+                        android:textColor="@color/colorBlack"
+                        android:paddingStart="@dimen/_11sdp"
+                        android:maxLength="9"
+                        android:textSize="@dimen/_14sdp"
+                        android:textCursorDrawable="@null" />
+                </LinearLayout>
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/et_password_login"
+                        style="@style/EditBoxStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/password"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:maxLength="15"
+                        android:textCursorDrawable="@null" />
+
+                    <ImageView
+                        android:id="@+id/iv_show_hide_password_login"
+                        style="@style/RippleEffectWithoutButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/_16sdp"
+                        android:padding="@dimen/_16sdp"
+                        android:src="@drawable/hide" />
+
+                </RelativeLayout>
+
+
+
+
+                    <TextView
+                        android:id="@+id/tv_forgot_password_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/forgot_password"
+                        android:textColor="@color/colorCheckBox"
+                        android:layout_gravity="end"
+                        android:textSize="@dimen/_14sdp" />
+
+
+                <include
+                    android:id="@+id/inc_btn_login"
+                    layout="@layout/button_layout" />
+
+
+                <TextView
+                    android:id="@+id/tv_not_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/sign_up_not_done"
+                    android:textColor="@color/colorBlack"
+                    style="@style/RippleEffectWithoutButton"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_24sdp"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+       <!-- <TextView
+            android:id="@+id/tv_not_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/sign_up_not_done"
+            android:textColor="@color/colorBlack"
+            style="@style/RippleEffectWithoutButton"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/rl_view"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:textSize="@dimen/_14sdp" />-->
+
+       <!-- <RelativeLayout
+            android:id="@+id/rl_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_24sdp">
+            <include
+                layout="@layout/default_bottom_line_view"
+                />
+        </RelativeLayout>-->
+
+</RelativeLayout>

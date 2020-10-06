@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "892728966300",
+    "firebase_url": "https://laundary-28f00.firebaseio.com",
+    "project_id": "laundary-28f00",
+    "storage_bucket": "laundary-28f00.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:892728966300:android:82c0ca621d67ac7065c159",
+        "android_client_info": {
+          "package_name": "com.laundaydriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "892728966300-e3erije28ud3khrs47ro9afd67d3vm2t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFBUohKr5ngwARJNdVn2vJxaPeXrfL6TA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "892728966300-e3erije28ud3khrs47ro9afd67d3vm2t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:892728966300:android:80c1b6b961ddb2f665c159",
+        "android_client_info": {
+          "package_name": "com.laundry.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "892728966300-e3erije28ud3khrs47ro9afd67d3vm2t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFBUohKr5ngwARJNdVn2vJxaPeXrfL6TA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "892728966300-e3erije28ud3khrs47ro9afd67d3vm2t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

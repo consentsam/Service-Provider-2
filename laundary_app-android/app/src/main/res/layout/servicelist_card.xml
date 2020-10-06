@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:gravity="center"
+
+        >
+        <ImageButton
+            android:id="@+id/dryclean_iv"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/dryclean"/>
+        <TextView
+            android:id="@+id/item_service_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/dryclean_iv"
+            android:padding="@dimen/_3sdp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Dry Clean"
+           android:layout_marginLeft="@dimen/_10sdp"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/item_service_price_tv"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/roboto_bold"
+
+            android:text="SAR 50"
+            android:textColor="@color/green"
+            android:textSize="@dimen/_10sdp" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/additemService_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+
+                android:background="@drawable/rect_corner"
+                android:fontFamily="@font/roboto_regular"
+                android:padding="@dimen/_5sdp"
+                android:layout_alignParentEnd="true"
+                android:text="Add Item"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_10sdp" />
+
+            <LinearLayout
+                android:id="@+id/add_lyt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/background_button"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+
+                 android:visibility="invisible"
+                >
+
+                <ImageButton
+                    android:id="@+id/service_plus_ib"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_3sdp"
+                    android:background="@drawable/icon_plus"
+
+                    />
+
+                <TextView
+                    android:id="@+id/service_count_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="0"
+                    android:textColor="@color/colorWhite"
+
+                    android:textSize="@dimen/_12sdp" />
+
+                <ImageButton
+                    android:id="@+id/service_minus_ib"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_3sdp"
+                    android:background="@drawable/icon_minus"
+
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@+id/sec_rlyt"
+        android:background="@color/colorgrey"/>
+
+</LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:elevation="@dimen/_5sdp"
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:padding="@dimen/_5sdp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       >
+        <ImageView
+            android:id="@+id/home_laundary_iv"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:background="@drawable/home_image"/>
+        <ImageButton
+            android:id="@+id/home_like_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_heart_unfill"
+            android:layout_alignTop="@+id/home_laundary_iv"/>
+    </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/home_laundry_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:padding="@dimen/_3sdp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Lavagettone"
+            android:textColor="@color/colorMain"
+            android:textSize="@dimen/_14sdp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.7"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/home_laundry_address_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:padding="@dimen/_3sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="South street 34-A"
+                    android:textColor="@color/colorgrey"
+                    android:textSize="@dimen/_10sdp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RatingBar
+                        android:id="@+id/home_laundry_ratingbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:max="5"
+                        style="@style/Widget.AppCompat.RatingBar.Small"/>
+
+                    <TextView
+                        android:id="@+id/home_laundry_rating_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="6dp"
+
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="3"
+                        android:textColor="@color/rating"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/home_laundry_minorder_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:padding="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Min Order"
+                    android:textColor="@color/colorgrey"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:layout_gravity="end"
+                android:gravity="right|bottom"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/home_laundry_distance_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginRight="@dimen/_5sdp"
+
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="15 km"
+                    android:textColor="@color/colorMain"
+                    android:textSize="@dimen/_10sdp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:padding="@dimen/_3sdp"
+
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="SAR 16"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/_13sdp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

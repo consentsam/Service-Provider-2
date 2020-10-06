@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       app:cardCornerRadius="@dimen/_20sdp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:background="@drawable/top_wear"
+            />
+    </androidx.cardview.widget.CardView>
+            <RelativeLayout
+                android:id="@+id/first_rlyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_below="@+id/card_image">
+                <TextView
+                    android:id="@+id/item_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:padding="@dimen/_3sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Shirt"
+
+                    android:textColor="@color/colorMain"
+                    android:textSize="@dimen/_14sdp" />
+                <TextView
+                   android:id="@+id/close_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:padding="@dimen/_3sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="close"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_10sdp" />
+
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/service_list_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                tools:itemCount="1"
+                android:layout_below="@+id/first_rlyt"
+                tools:listitem="@layout/servicelist_card"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:layout_height="wrap_content"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/service_list_recyclerview"
+        android:weightSum="3"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:paddingTop="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_15sdp"
+        android:elevation="@dimen/_5sdp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="SAR 50"
+            android:textColor="@color/green"
+
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/roboto_bold"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="3 Item"
+            android:textColor="@color/colorgrey"
+
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/roboto_regular"
+            />
+
+        <TextView
+            android:id="@+id/add_item_in_cart_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="right"
+            android:text="Add Item"
+
+            android:textColor="@color/colorMain"
+            android:textSize="@dimen/_14sdp" />
+    </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

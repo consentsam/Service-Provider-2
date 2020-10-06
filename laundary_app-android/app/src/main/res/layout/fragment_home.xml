@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.ui.home.HomeFragment"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/_8sdp"
+    android:background="@drawable/app_bg">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       >
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:background="@drawable/rect_corner"/>
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:background="@drawable/location_icon"
+
+            android:layout_margin="@dimen/_10sdp"/>
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:background="@drawable/notification"
+           android:layout_margin="@dimen/_10sdp"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+
+            android:fontFamily="@font/roboto_medium"
+            android:text="Near You"
+            android:textColor="@color/colorMain"
+            android:textSize="@dimen/_16sdp" />
+
+        <TextView
+            android:id="@+id/viewall_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/roboto_medium"
+            android:text="View All"
+            android:textColor="@color/colorgrey"
+            android:textSize="@dimen/_14sdp" />
+    </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvlaundry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvServices"
+                tools:itemCount="2"
+                tools:listitem="@layout/laundry_card"/>
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+
+                android:layout_marginTop="@dimen/_16sdp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Explore by Categories"
+                android:textColor="@color/colorMain"
+                android:textSize="@dimen/_16sdp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="View All"
+                android:textColor="@color/colorgrey"
+                android:textSize="@dimen/_14sdp" />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+
+            tools:itemCount="3"
+
+
+            tools:listitem="@layout/category_card"/>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

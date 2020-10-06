@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.laundry.user">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".application.CustomApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/CustomAppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".GoToHOMEActivity"/>
+        <activity android:name=".ui.activity.AddAddressActivity" />
+        <activity android:name=".ui.activity.SelectAddressActivity" />
+        <activity android:name=".ui.activity.PaymentConfirmationActivity" />
+        <activity android:name=".ui.activity.OrderConfirmationActivity" />
+        <activity android:name=".ui.activity.ScheduleDeliveryActivity" />
+        <activity android:name=".ui.activity.SchedulePickupActivity" />
+        <activity android:name=".ui.activity.LaundryDetailActivity" />
+        <activity android:name=".ui.activity.ViewAllActivity" />
+        <activity
+            android:name=".ui.activity.profile.EditProfileActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.activity.DashboardActivity"
+            android:label="@string/title_activity_dashboard" />
+        <activity
+            android:name=".ui.activity.resetpassword.ResetPasswordActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.activity.forgotpassword.ForgotPasswordActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.activity.login.LoginActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".ui.activity.home.HomeActivity" />
+        <activity
+            android:name=".ui.activity.profile.ProfileCreateActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.activity.otpverify.OtpVerifyActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+
+        <service
+            android:name=".firebasenotification.MyFirebaseNotification"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!--
+            Set custom default icon. This is used when no icon is set for incoming notification messages.
+            See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <!--
+            Set color used with incoming notification messages. This is used when no color is set for the incoming
+            notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@android:color/transparent" />
+
+
+
+
+
+
+
+        <activity
+            android:name=".ui.activity.register.RegisterActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".ui.activity.SelectLanguageActivity" />
+        <activity android:name=".ui.activity.SelectThemeModeActivity" />
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".base.BaseActivity" />
+        <activity android:name=".ui.activity.MainActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat" />
+    </application>
+
+</manifest>

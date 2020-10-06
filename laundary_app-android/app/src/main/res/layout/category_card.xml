@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_8sdp">
+        <ImageView
+            android:id="@+id/category_image_iv"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:background="@drawable/top_wear"/>
+        <TextView
+            android:id="@+id/category_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Top Wear"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/colorgrey"
+            android:textSize="@dimen/_12sdp" />
+
+
+    </LinearLayout>
+</LinearLayout>

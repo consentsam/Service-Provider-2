@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/app_bg"
+    tools:context=".ui.activity.profile.EditProfileActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:orientation="vertical">
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="@string/edit_profile"
+                android:textColor="@color/colorMain"
+                android:textSize="@dimen/_16sdp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_profile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivProfileImage"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_marginTop="32dp"
+                    android:src="@drawable/profle_crtn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/ivCamera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:padding="@dimen/_5sdp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivProfileImage"
+                    app:layout_constraintEnd_toEndOf="@+id/ivProfileImage"
+                    android:src="@drawable/ic_baseline_photo_camera_24"/>
+
+           <!--     <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_profile"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:padding="@dimen/_8sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profle_crtn"
+                    app:civ_border_width="@dimen/_1sdp"
+                    app:civ_border_color="@color/colorMain"
+                    app:civ_circle_background_color="@color/colorWhite"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />-->
+
+                <!--  <de.hdodenhof.circleimageview.CircleImageView
+                      android:id="@+id/profile_upload"
+                      android:layout_width="@dimen/_35sdp"
+                      android:layout_height="@dimen/_35sdp"
+                      android:layout_marginEnd="4dp"
+                      android:layout_marginRight="4dp"
+                      android:layout_marginBottom="12dp"
+                      android:src="@drawable/icon_camera"
+                      app:layout_constraintBottom_toBottomOf="@+id/img_profile_new_address"
+                      app:layout_constraintEnd_toEndOf="@+id/img_profile_new_address" />-->
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <EditText
+                android:id="@+id/editProfile_name_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/EditBoxWithoutBackgroundStyle"
+                android:hint="@string/name"
+                android:inputType="textCapWords"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <EditText
+                    android:id="@+id/tv_countrycode_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="+966 "
+                    style="@style/EditBoxWithoutBackgroundStyle"
+                    android:textSize="@dimen/_14sdp"
+                    android:textCursorDrawable="@null"/>
+
+                <EditText
+                    android:id="@+id/et_mobile_number_edit_profile"
+                    style="@style/EditBoxWithoutBackgroundStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/mobile_number"
+                    android:inputType="number"
+                    android:textColorHint="@color/colorCheckBox"
+                    android:textColor="@color/colorBlack"
+                    android:paddingStart="@dimen/_11sdp"
+                    android:maxLength="9"
+                    android:textSize="@dimen/_14sdp"
+                    android:textCursorDrawable="@null" />
+            </LinearLayout>
+
+
+            <EditText
+
+                android:id="@+id/et_email_edit_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/EditBoxWithoutBackgroundStyle"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                />
+
+
+            <include
+                android:id="@+id/inc_btn_edit_profile_create"
+                layout="@layout/button_layout"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

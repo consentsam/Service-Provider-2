@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.AddAddressActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+<TextView
+    android:id="@+id/address_back_tv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Add Address"
+    android:textSize="@dimen/_13sdp"
+    android:fontFamily="@font/roboto_medium"
+    android:padding="@dimen/_10sdp"
+    android:textColor="@color/colorMain"
+    android:drawableLeft="@drawable/back_icon"
+    android:drawablePadding="@dimen/_10sdp"
+
+    />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_16sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_forgot_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_16sdp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Set Delivery Location"
+                    android:textColor="@color/colorMain"
+                    android:textSize="@dimen/_20sdp" />
+
+
+
+
+
+
+                <EditText
+                    android:id="@+id/location_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/EditBoxWithoutBackgroundStyle"
+                    android:hint="Location"
+                    android:inputType="textCapWords"
+                    />
+                <EditText
+                    android:id="@+id/house_no_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/EditBoxWithoutBackgroundStyle"
+                    android:hint="House No."
+                    android:inputType="textCapWords"
+                    />
+                <EditText
+                    android:id="@+id/landmark_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/EditBoxWithoutBackgroundStyle"
+                    android:hint="Landmark"
+                    android:inputType="textCapWords"
+                    />
+                <RadioGroup
+                   android:id="@+id/address_type_grp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_5sdp">
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Home"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:fontFamily="@font/roboto_regular"
+
+                        android:text="Office"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_13sdp" />
+                    <RadioButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:fontFamily="@font/roboto_regular"
+
+                        android:text="Office"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_13sdp" />
+
+                </RadioGroup>
+                <Button
+                    android:id="@+id/btn_submit_addAdress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_button"
+                    android:layout_marginTop="@dimen/_32sdp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginBottom="@dimen/_24sdp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:padding="@dimen/_16sdp"
+                    android:textAllCaps="true"
+                    android:text="@string/proceed"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

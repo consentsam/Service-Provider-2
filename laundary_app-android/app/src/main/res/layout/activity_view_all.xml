@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.ViewAllActivity"
+    android:layout_margin="@dimen/_8sdp"
+    android:background="@drawable/app_bg">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:drawableLeft="@drawable/back_icon"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Lav"
+                    android:textColor="@color/colorgrey"
+                    android:textSize="@dimen/_16sdp" />
+                <ImageView
+
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:background="@drawable/search_searchicon"
+                    android:layout_toLeftOf="@+id/filter_iv"
+                    android:layout_margin="@dimen/_10sdp"/>
+                <ImageView
+                    android:id="@+id/filter_iv"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:background="@drawable/list_filter"
+                     android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/_10sdp"/>
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/service_list_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

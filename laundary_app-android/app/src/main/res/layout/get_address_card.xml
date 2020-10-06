@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_5sdp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/_5sdp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/address_radioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="Name"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/roboto_medium"
+            />
+        <ImageButton
+           android:id="@+id/address_delete"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_delete"
+            />
+        <ImageButton
+            android:id="@+id/address_edit"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_alignRight="@+id/address_delete"
+            android:background="@drawable/ic_edit"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/address_card_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorCheckBox"
+        android:textSize="@dimen/_11sdp"
+        android:text="address"
+        android:fontFamily="@font/roboto_regular"
+        android:padding="@dimen/_3sdp"/>
+    <TextView
+        android:id="@+id/address_number_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorCheckBox"
+        android:textSize="@dimen/_11sdp"
+        android:text="9999999999"
+        android:fontFamily="@font/roboto_regular"
+        android:padding="@dimen/_3sdp"/>
+    <TextView
+        android:id="@+id/address_location_tv"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorCheckBox"
+        android:textSize="@dimen/_11sdp"
+        android:text="9999999999"
+        android:fontFamily="@font/roboto_regular"
+        android:padding="@dimen/_3sdp"/>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>

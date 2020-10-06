@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.ui.profile.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="@string/title_setting"
+                android:textColor="@color/colorMain"
+                android:textSize="@dimen/_18sdp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/profile_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Alica Warren"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <TextView
+                        android:id="@+id/profile_number_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:drawableLeft="@drawable/setting_callicon"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="581-307-6902"
+                        android:textColor="@color/colorCheckBox"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/profile_email_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:drawableLeft="@drawable/setting_msgicon"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="warren.alicia@gmail.com"
+                        android:textColor="@color/colorCheckBox"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_profile"
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="@dimen/_90sdp"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:padding="@dimen/_8sdp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/profle_crtn"
+                        app:civ_border_color="@color/colorMain"
+                        app:civ_border_width="@dimen/_1sdp"
+                        app:civ_circle_background_color="@color/colorWhite" />
+
+                    <TextView
+
+                        android:id="@+id/edit_profile_tv"
+                        style="@style/EditBoxStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/edit_profile"
+                        android:textColor="@color/colorMain"
+                        android:textSize="@dimen/_12sdp"
+
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/colorCheckBox" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:fontFamily="@font/roboto_regular"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/my_account"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <TextView
+                        android:id="@+id/my_account_det_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/my_account_opt"
+                        android:textColor="@color/colorgrey"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <LinearLayout
+                        android:id="@+id/my_account_det_lly"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:fontFamily="@font/roboto_regular"
+                            android:padding="@dimen/_8sdp"
+                            android:text="@string/address"
+                            android:textColor="@color/colorgrey"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:fontFamily="@font/roboto_regular"
+                            android:padding="@dimen/_8sdp"
+                            android:text="@string/payment_method"
+                            android:textColor="@color/colorgrey"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/my_account_det_iv"
+                    style="@style/RippleEffectWithoutButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center_vertical"
+
+                    android:padding="@dimen/_16sdp"
+                    android:src="@drawable/setting_drop_down" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/colorCheckBox" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:fontFamily="@font/roboto_regular"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/help"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <TextView
+                        android:id="@+id/my_help_det_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/help_opt"
+                        android:textColor="@color/colorgrey"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <LinearLayout
+                        android:id="@+id/my_help_det_lly"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:fontFamily="@font/roboto_regular"
+                            android:padding="@dimen/_8sdp"
+                            android:text="@string/aboutus"
+                            android:textColor="@color/colorgrey"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:fontFamily="@font/roboto_regular"
+                            android:padding="@dimen/_8sdp"
+                            android:text="@string/faq"
+                            android:textColor="@color/colorgrey"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:fontFamily="@font/roboto_regular"
+                            android:padding="@dimen/_8sdp"
+                            android:text="@string/term_and_condition"
+                            android:textColor="@color/colorgrey"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:fontFamily="@font/roboto_regular"
+                            android:padding="@dimen/_8sdp"
+                            android:text="@string/blog"
+                            android:textColor="@color/colorgrey"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:fontFamily="@font/roboto_regular"
+                            android:padding="@dimen/_8sdp"
+                            android:text="@string/cancellation_policy"
+                            android:textColor="@color/colorgrey"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/my_help_det_iv"
+                    style="@style/RippleEffectWithoutButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center_vertical"
+
+                    android:padding="@dimen/_16sdp"
+                    android:src="@drawable/setting_drop_down" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/colorCheckBox" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/roboto_regular"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/refer_a_friend"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_15sdp" />
+
+
+                <ImageView
+
+                    style="@style/RippleEffectWithoutButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center_vertical"
+
+                    android:padding="@dimen/_16sdp"
+                    android:src="@drawable/setting_drop_down" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/colorCheckBox" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/roboto_regular"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/support"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_15sdp" />
+
+
+                <ImageView
+
+                    style="@style/RippleEffectWithoutButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center_vertical"
+
+                    android:padding="@dimen/_16sdp"
+                    android:src="@drawable/setting_drop_down" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/colorCheckBox" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/roboto_regular"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/others"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_15sdp" />
+
+
+                <ImageView
+
+                    style="@style/RippleEffectWithoutButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center_vertical"
+
+                    android:padding="@dimen/_16sdp"
+                    android:src="@drawable/setting_drop_down" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/colorCheckBox" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/signout_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/signout_icon" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

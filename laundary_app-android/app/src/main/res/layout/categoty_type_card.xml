@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/category_lyt"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/category_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorCheckBox"
+        android:textSize="@dimen/_12sdp"
+        android:text="category"
+        android:padding="@dimen/_8sdp"/>
+    <View
+        android:id="@+id/category_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/colorMain"
+        android:visibility="gone"/>
+
+</LinearLayout>
